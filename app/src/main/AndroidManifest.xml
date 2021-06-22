@@ -3,7 +3,6 @@
     package="com.example.activity9">
 
     <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -13,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Activity9">
         <activity android:name=".TambahData" android:label="@string/txtJudul2"></activity>
+        <activity android:name=".LihatData" android:label="@string/txtJudul3" android:parentActivityName=".MainActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
