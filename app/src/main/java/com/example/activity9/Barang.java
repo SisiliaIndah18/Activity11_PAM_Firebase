@@ -3,19 +3,15 @@ package com.example.activity9;
 import java.io.Serializable;
 
 public class Barang implements Serializable {
-    private String kode;
-    private String nama;
+    private String nama, telpon, kode;
 
     public Barang(){
 
     }
 
-    public String getKode(){
-        return kode;
-    }
-
-    public void setKode(String kd){
-        this.kode = kd;
+    public Barang( String nama, String telpon){
+        this.nama = nama;
+        this.telpon = telpon;
     }
 
     public String getNama(){
@@ -26,12 +22,28 @@ public class Barang implements Serializable {
         this.nama = nama;
     }
 
+    public String getTelpon(){
+        return telpon;
+    }
+
+    public void setTelpon(String telpon){
+        this.telpon = telpon;
+    }
+
+    public String getKode(){
+        return kode;
+    }
+
+    public void setKode(String kode){
+        this.kode = kode;
+    }
+
     @Override
     public String toString() {
-        return " " + kode + "\n" + " " + nama;
-    }
-    public Barang(String kd, String nm){
-        kode = kd;
-        nama = nm;
+        return "Barang{" +
+                "nama='" + nama + '\'' +
+                ", telpon='" + telpon + '\'' +
+                ", kode='" + kode + '\'' +
+                '}';
     }
 }

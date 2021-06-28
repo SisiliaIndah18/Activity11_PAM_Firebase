@@ -2,14 +2,14 @@ package com.example.activity9;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button bTambah;
-    private Button bLihat;
+    private Button bTambah, bLihat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                startActivity(TambahData.getActIntent(MainActivity.this));
+                Intent intent = new Intent(MainActivity.this, TambahData.class);
+                startActivity(intent);
             }
         });
 

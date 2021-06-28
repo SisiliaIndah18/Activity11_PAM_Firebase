@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Activity9">
-        <activity android:name=".TambahData" android:label="@string/txtJudul2"></activity>
-        <activity android:name=".LihatData" android:label="@string/txtJudul3" android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".TemanEdit"></activity>
+        <activity android:name=".LihatData"/>
+        <activity android:name=".TambahData"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

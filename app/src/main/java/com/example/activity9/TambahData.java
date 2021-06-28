@@ -21,6 +21,7 @@ public class TambahData extends AppCompatActivity {
     private DatabaseReference database;
     private Button btSubmit;
     private EditText etKode, etNama;
+    String nm, tlp;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -57,9 +58,5 @@ public class TambahData extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Data Berhasil Ditambahkan", Toast.LENGTH_LONG).show();
             }
         });
-    }
-
-    public static Intent getActIntent(Activity activity) {
-        return new Intent(activity, TambahData.class);
     }
 }
